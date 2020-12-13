@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false">
+      </ion-menu-button> 
+    </ion-buttons>
+    <ion-title>{{title}}</ion-title>
+    <ion-buttons slot = "end">
+      <ion-button (click)="dismissModal()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <img src="{{imageURL}}">
+  <ion-fab vertical="center" horizontal="end" slot="fixed">
+    <ion-fab-button (click) = "shareItem(recipe)">
+      <ion-icon name="share"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-item>{{ingredients}}</ion-item>
+  <p>{{instructions}}</p>
+</ion-content>

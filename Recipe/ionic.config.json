@@ -1,0 +1,8 @@
+{
+  "name": "Recipe",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "a2b78aea"
+}
